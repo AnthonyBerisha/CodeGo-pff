@@ -1,0 +1,16 @@
+.search {
+	&__header {
+		background-color: $color-primary;
+		padding: 2rem;
+		border-radius: 2rem;
+
+		h2 {
+			color: $white;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: .3rem;
+			margin-bottom: 1rem;
+		}
+
+	}
+}

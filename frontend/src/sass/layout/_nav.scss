@@ -1,0 +1,100 @@
+.brand {
+	display: flex;
+
+	&__logo {
+		height: 60px;
+	}
+
+	&__title {
+		align-self: center;
+		color: $color-contrast;
+		font-size: 2rem;
+		font-weight: 700;
+	}
+}
+
+
+.searchbar {
+	display: block;
+
+	&__input {
+		border-radius: 19px !important;
+		/*padding-right: -40px;*/
+		display: inline-block;
+	}
+
+	&__append {
+		position: relative;
+		right: 40px;
+		z-index: 4;
+	}
+
+	&__button {
+		background: transparent;
+		border: none;
+		color: $light-grey;
+		border-radius: 50% !important;
+
+		&:hover {
+			background: transparent;
+			color: darken($light-grey, 25%);
+		}
+
+		&.active,
+		&:active,
+		&.focus,
+		&:focus {
+			background: $color-primary;
+			color: $white;
+		}
+	}
+
+	&__dropdown {
+		background: transparent;
+		border: none;
+		padding: 0;
+		&:hover, &:focus, &:active, & option {
+			background: transparent;
+			border: none;
+			&:hover, &:focus, &:active {
+				background: transparent;
+				border: none;
+			}
+		}
+		&.show {
+			background: transparent !important;
+			border: none;
+			outline: none !important;
+			color: $color-primary;
+		}
+		& .dropdown-toggle.btn {
+			border: none;
+			background: transparent;
+			color: $color-primary;
+			&:hover, &:focus, &:active, &.show {
+				background: transparent;
+				color: $color-primary;
+				border: none;
+				box-shadow: none;
+			}
+		}
+
+		& .dropdown-item.logout {
+			color: $color-contrast;
+		}
+	}
+}
+
+
+.nav-link {
+	color: $color-primary;
+	
+	&:hover, &:active {
+		color: saturate($color-primary, 30%);
+	}
+
+	&__basket {
+		font-size: 2rem;
+	}
+}
+

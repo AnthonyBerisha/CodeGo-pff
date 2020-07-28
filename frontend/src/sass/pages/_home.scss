@@ -1,0 +1,59 @@
+#arrow {
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: $color-contrast;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.carousel {
+    &__item {
+        height: 50vh;
+        overflow: hidden;
+    }
+    &__image {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        &--light {
+            color: black;
+        }
+    }
+    &__caption {
+        &--shadow {
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+        }
+        &-title {
+            font-weight: 900;
+            font-size: 2rem; 
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        &-descr {
+            font-weight: 700;
+            font-size: 1.5em; 
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+    }
+}
+
+.favorites {
+    padding: .5rem;
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        margin: 2rem;
+    }
+
+    .menu-wrapper {
+        border-left: 2px solid $light-grey;
+        border-right: 2px solid $light-grey;
+        border-radius: 3rem;
+        background-color: lighten($color-primary, 45%);
+    }
+}
+

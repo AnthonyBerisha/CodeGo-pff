@@ -1,0 +1,32 @@
+{
+  "name": "cabellio",
+  "version": "1.0.0",
+  "description": "Code & Go - Projet de fin de formation",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "doc": "apidoc -i src/ -o doc/ -e node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.epitech.eu:/agnes.remy@epitech.eu/codac-pff"
+  },
+  "author": "Dorsa Alaee, Anthony Berisha, Marin Conan, Agnes Remy",
+  "license": "ISC",
+  "dependencies": {
+    "apidoc": "^0.20.0",
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.11",
+    "mongoose-id-validator": "^0.5.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

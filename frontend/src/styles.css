@@ -1,0 +1,375 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap);
+main {
+  min-height: 80vh;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-button, .cart-button:hover {
+  font-size: 2rem;
+  border-radius: 50%;
+  border: none;
+  background-image: linear-gradient(45deg, #7aa354, #c6ec79);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.auth-button, .auth-button:hover {
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  border: none;
+  background-image: linear-gradient(90deg, #7aa354, #94b773);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.product-card {
+  width: 20rem !important;
+  margin: 2rem 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.product-card__image-container {
+  width: 18rem;
+  height: 15rem;
+  overflow: hidden;
+}
+.product-card__image {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 18rem;
+  height: 15rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+.product-card__text {
+  /*padding-bottom: .5rem;*/
+}
+
+.header {
+  margin-bottom: 1%;
+  position: sticky;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+}
+.brand__logo {
+  height: 60px;
+}
+.brand__title {
+  align-self: center;
+  color: #96413c;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.searchbar {
+  display: block;
+}
+.searchbar__input {
+  border-radius: 19px !important;
+  /*padding-right: -40px;*/
+  display: inline-block;
+}
+.searchbar__append {
+  position: relative;
+  right: 40px;
+  z-index: 4;
+}
+.searchbar__button {
+  background: transparent;
+  border: none;
+  color: #ced4da;
+  border-radius: 50% !important;
+}
+.searchbar__button:hover {
+  background: transparent;
+  color: #8594a3;
+}
+.searchbar__button.active, .searchbar__button:active, .searchbar__button.focus, .searchbar__button:focus {
+  background: #7aa354;
+  color: #fff;
+}
+.searchbar__dropdown {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.searchbar__dropdown:hover, .searchbar__dropdown:focus, .searchbar__dropdown:active, .searchbar__dropdown option {
+  background: transparent;
+  border: none;
+}
+.searchbar__dropdown:hover:hover, .searchbar__dropdown:hover:focus, .searchbar__dropdown:hover:active, .searchbar__dropdown:focus:hover, .searchbar__dropdown:focus:focus, .searchbar__dropdown:focus:active, .searchbar__dropdown:active:hover, .searchbar__dropdown:active:focus, .searchbar__dropdown:active:active, .searchbar__dropdown option:hover, .searchbar__dropdown option:focus, .searchbar__dropdown option:active {
+  background: transparent;
+  border: none;
+}
+.searchbar__dropdown.show {
+  background: transparent !important;
+  border: none;
+  outline: none !important;
+  color: #7aa354;
+}
+.searchbar__dropdown .dropdown-toggle.btn {
+  border: none;
+  background: transparent;
+  color: #7aa354;
+}
+.searchbar__dropdown .dropdown-toggle.btn:hover, .searchbar__dropdown .dropdown-toggle.btn:focus, .searchbar__dropdown .dropdown-toggle.btn:active, .searchbar__dropdown .dropdown-toggle.btn.show {
+  background: transparent;
+  color: #7aa354;
+  border: none;
+  box-shadow: none;
+}
+.searchbar__dropdown .dropdown-item.logout {
+  color: #96413c;
+}
+
+.nav-link {
+  color: #7aa354;
+}
+.nav-link:hover, .nav-link:active {
+  color: #79c82f;
+}
+.nav-link__basket {
+  font-size: 2rem;
+}
+
+.footer {
+  font-size: 20px;
+  background-color: #7aa354;
+  position: relative;
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+}
+.footer .footer-background {
+  padding-top: 2%;
+  width: 100%;
+  position: relative;
+}
+
+.form {
+  max-width: 35rem;
+}
+.form__heading {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin: 2rem;
+}
+.form input {
+  border: 1px dashed #7aa354;
+}
+
+#arrow {
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #96413c;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.carousel__item {
+  height: 50vh;
+  overflow: hidden;
+}
+.carousel__image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.carousel__image--light {
+  color: black;
+}
+.carousel__caption--shadow {
+  text-shadow: 0px 0px 8px black;
+}
+.carousel__caption-title {
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.carousel__caption-descr {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.favorites {
+  padding: 0.5rem;
+}
+.favorites__heading {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 2rem;
+}
+.favorites .menu-wrapper {
+  border-left: 2px solid #ced4da;
+  border-right: 2px solid #ced4da;
+  border-radius: 3rem;
+  background-color: #eef4e9;
+}
+
+.category__heading {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9EsrSoEbeVrn-0rdjENZ9gHaEP%26pid%3DApi&f=1");
+  background-clip: text;
+  background-size: contain;
+  background-repeat: repeat;
+  color: transparent;
+}
+.category__heading[data-title=Confiture] {
+  font-size: 5rem;
+  font-weight: 800;
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdoghealthcoach.com%2Fwp-content%2Fuploads%2F2016%2F06%2FCan-dogs-eat-apricots.jpg&f=1&nofb=1");
+  background-clip: text;
+  background-size: contain;
+  background-repeat: repeat;
+  color: transparent;
+}
+.category__heading[data-title=Soupe] {
+  font-size: 5rem;
+  font-weight: 800;
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.webmd.com%2Fdtmcms%2Flive%2Fwebmd%2Fconsumer_assets%2Fsite_images%2Farticle_thumbnails%2Fslideshows%2Fpowerhouse_vegetables_slideshow%2F650x350_powerhouse_vegetables_slideshow.jpg&f=1&nofb=1");
+  background-clip: text;
+  background-size: contain;
+  background-repeat: repeat;
+  color: transparent;
+}
+.category__heading[data-title=Huile] {
+  font-size: 5rem;
+  font-weight: 800;
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PB2mufSGRRdQr2MDtWdd8wAAAA%26pid%3DApi&f=1");
+  background-clip: text;
+  background-size: contain;
+  background-repeat: repeat;
+  color: transparent;
+}
+.category__heading[data-title=Miel] {
+  font-size: 5rem;
+  font-weight: 800;
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.x_ol8uTrBcUhMhjbLd_OLwHaEK%26pid%3DApi&f=1");
+  background-clip: text;
+  background-size: contain;
+  background-repeat: repeat;
+  color: transparent;
+}
+
+.cart {
+  border: none;
+}
+.cart__table {
+  align-items: center;
+  font-size: 1.2rem;
+}
+.cart__table td:first-child {
+  text-align: center;
+}
+.cart__button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: none;
+  background-image: linear-gradient(90deg, #7aa354, #94b773);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cart-item__image {
+  border-radius: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.4);
+}
+.cart-item__image-container {
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+}
+.cart-item__image-column {
+  width: 8rem;
+}
+.cart-item__button {
+  background: transparent;
+  border: none;
+}
+.cart-item__button:hover, .cart-item__button:focus, .cart-item__button:hover {
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  color: #f10c00;
+}
+.cart-item__button-icon {
+  color: #FF6058;
+  font-size: 2rem;
+}
+
+.list-title {
+  text-align: center;
+  padding: 10px;
+}
+
+.order {
+  padding: 5px;
+}
+
+.orders-list {
+  border: solid lightgrey 1px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.order-status {
+  grid-area: orderStatus;
+  text-align: center;
+}
+
+.order-status-button {
+  grid-area: orderStatusButton;
+  text-align: center;
+  border-radius: 8px;
+  background: #27C940;
+  width: 100%;
+  height: 30px;
+}
+
+.order-status-button span {
+  color: white;
+}
+
+.search__header {
+  background-color: #7aa354;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.search__header h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

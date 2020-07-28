@@ -1,0 +1,8 @@
+{
+    "name": "Documentation Jardin Cabellio",
+    "version": "1.0.0",
+    "description": "Manual api",
+    "template": {
+        "forceLangage": "fr"
+    }
+}

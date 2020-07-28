@@ -1,0 +1,15 @@
+.form {
+
+	max-width: 35rem;
+
+	&__heading {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: .5rem;
+		margin: 2rem;
+	}
+
+	input {
+		border: 1px dashed $color-primary;
+	}
+}

@@ -1,0 +1,9 @@
+@mixin text-bg-image($image: $default-text-bg, $size: contain) {
+	font-size: 5rem;
+	font-weight: 800;
+	background: url($image);
+	background-clip: text;
+	background-size: $size;
+	background-repeat: repeat;
+	color: transparent;
+}

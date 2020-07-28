@@ -1,0 +1,17 @@
+.footer {
+    font-size: 20px;
+    background-color: #7aa354;
+    position: relative;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: $white;
+    
+    .footer-background {
+        padding-top: 2%;
+        width: 100%;
+        position: relative;
+    }
+}

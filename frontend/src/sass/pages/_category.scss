@@ -1,0 +1,20 @@
+.category {
+	&__heading {
+		text-align: center;
+
+		@include text-bg-image();
+
+		&[data-title="Confiture"] {
+			@include text-bg-image($jam, contain);
+		}
+		&[data-title="Soupe"] {
+			@include text-bg-image($soup, contain);
+		}
+		&[data-title="Huile"] {
+			@include text-bg-image($oil, contain);
+		}
+		&[data-title="Miel"] {
+			@include text-bg-image($honey, contain);
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.product-card {
+	width: 20rem !important;
+	margin: 2rem 1rem;
+	border-radius: 2rem;
+	padding: 1rem;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+
+	&__image-container {
+		width: 18rem;
+		height: 15rem;
+		overflow: hidden;
+	}
+	&__image {
+		border-radius: 1.5rem 1.5rem 0 0;
+		width: 18rem;
+		height: 15rem;
+		object-fit: cover;
+		overflow: hidden;
+	}
+
+	&__text {
+		/*padding-bottom: .5rem;*/
+	}
+}
